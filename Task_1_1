@@ -1,0 +1,9 @@
+#Напишите программу, которая выводит чётные числа из заданного списка и останавливается, если встречает число 237.
+
+listValue = list(map(int, input().split()))
+
+for i in range(len(listValue)):
+    if listValue[i] % 2 == 0:
+        print(listValue[i])
+    elif listValue[i] == 237:
+        break
